@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/txtuname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="User Name"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="Enter User Name"
+        android:layout_toRightOf="@id/txtuname"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBaseline="@id/txtuname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtusername" />
+
+    <TextView
+        android:id="@+id/txtpassword"
+        android:text="Password"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/txtuname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtpassword"
+        android:layout_toRightOf="@id/txtpassword"
+        android:layout_below="@id/edtusername"
+        android:layout_width="fill_parent"
+        android:inputType="textPassword"
+        android:layout_marginLeft="10dp"
+        android:hint="Password"
+        android:layout_alignBaseline="@id/txtpassword"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:text="@string/btnsubtext"
+        android:layout_below="@id/txtpassword"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btncancel"
+        android:text="@string/btncanceltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtpassword"
+        android:layout_alignRight="@+id/edtpassword"
+        android:layout_alignEnd="@+id/edtpassword" />
+
+
+</RelativeLayout>
